@@ -35,7 +35,7 @@
             </form>
         </div>
         <div class="form-container sign-in-container">
-            <form>
+            <form id="loginForm">
                 <h1>Sign In</h1>
                 <div class="social-container">
                     <a href="#" class="social"><i class="fab fa-instagram"></i></a>
@@ -43,10 +43,11 @@
                     <a href="#" class="social"><i class="fab fa-facebook"></i></a>
                 </div>
                 <span>or use your account</span>
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
+                <input type="email" id="username" placeholder="Email" />
+                <input type="password" id="password" placeholder="Password" />
                 <a href="#">Forgot your password?</a>
-                <button onclick="return false;">Sign In</button>
+                <button type="submit">Sign In</button>
+                <div id="alertBox" class="alert" style="display:none;"></div>
             </form>
         </div>
         <div class="overlay-container">
@@ -65,6 +66,7 @@
         </div>
     </div>
     <script src="script.js"></script>
+    <script src="js/login.js"></script>
 </body>
 
 </html>

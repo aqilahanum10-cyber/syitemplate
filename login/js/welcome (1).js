@@ -17,10 +17,12 @@ document.addEventListener("DOMContentLoaded", function () {
             <span class="text-light me-2">Halo, ${user}</span>
             <button onclick="logout()" class="btn btn-outline-light btn-sm">Logout</button>
         `;
-    } else {
+    } 
+    else {
         authArea.innerHTML = `
-            <span class="text-light me-2">Belum login</span>
-            <button onclick="goLogin()" class="btn btn-primary btn-sm">Login</button>
+            <a href="login/index.html" class="btn btn-primary py-2 px-4">
+            Login
+            </a>
         `;
     }
 

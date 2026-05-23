@@ -15,16 +15,18 @@ document.addEventListener("DOMContentLoaded", function () {
     if (user) {
         authArea.innerHTML = `
             <span class="text-light me-2">Halo, ${user}</span>
-            <button onclick="logout()" class="btn btn-outline-light btn-sm">Logout</button>
+
+            <button onclick="logout()" 
+                class="btn btn-outline-light btn-sm">
+                Logout
+            </button>
         `;
-    } 
-    else {
+    } else {
         authArea.innerHTML = `
-            <a href="login/index.html" 
-                class="btn btn-primary py-2 px-4"
-                style="margin-left:20px;">
+            <button onclick="goLogin()" 
+                class="btn btn-primary py-2 px-4">
                 Login
-            </a>
+            </button>
         `;
     }
 

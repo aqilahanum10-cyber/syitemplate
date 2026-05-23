@@ -19,8 +19,9 @@ document.getElementById("registerForm").addEventListener("submit", async functio
         alert("Registrasi berhasil, silakan login");
 
         document.getElementById("container").classList.remove("right-panel-active");
-
-    } else {
-        alert(data.message || "Gagal registrasi");
+    }
+    else {
+        document.getElementById("message").innerText = 
+        data.message || "Gagal registrasi");
     }
 });

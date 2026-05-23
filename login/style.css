@@ -332,11 +332,7 @@ input {
 }
 
 #message{
-    background: #ff4e4e;
-    color: white;
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px;
+    display: none;
 }
 
 #alertBox{

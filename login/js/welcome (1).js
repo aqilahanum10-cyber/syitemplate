@@ -12,17 +12,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const user = localStorage.getItem("username");
     const authArea = document.getElementById("authArea");
 
-    if (!authArea) return;
-
     if (user) {
         authArea.innerHTML = `
-            <span style="color:white; margin-right:10px;">Halo, ${user}</span>
-            <button onclick="logout()" class="nav-cta">Logout</button>
+            <span class="text-light me-2">Halo, ${user}</span>
+            <button onclick="logout()" class="btn btn-outline-light btn-sm">Logout</button>
         `;
     } else {
         authArea.innerHTML = `
-            <button onclick="goLogin()" class="nav-cta">Belum Login</button>
-            <button onclick="goLogin()" class="nav-cta">Login</button>
+            <span class="text-light me-2">Belum login</span>
+            <button onclick="goLogin()" class="btn btn-primary btn-sm">Login</button>
         `;
     }
 

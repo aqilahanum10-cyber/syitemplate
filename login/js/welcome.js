@@ -18,9 +18,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 Logout
             </button>
         `;
-    } else {
+    }
+    else {
         authArea.innerHTML = `
-            <button onclick="goLogin()" class="btn btn-primary py-2 px-4">
+            <span class="text-light me-2">Belum login |</span>
+            <button onclick="goLogin()" class="btn btn-primary btn-sm">
                 Login
             </button>
         `;

@@ -323,3 +323,26 @@ input {
     transform: translateX(20%);
   }
 }
+.alert{
+    background: #e44e4e;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border:1px solid #b32929;
+}
+
+#message{
+    background: #ff4e4e;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#alertBox{
+    position: fixed;
+    top: 20px;
+    left: 20%;
+    transform: translateX(-50%);
+    z-index: 999;
+}

@@ -14,7 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (user) {
         authArea.innerHTML = `
-            <button onclick="logout()" class="btn btn-outline-light btn-sm">
+            <span class="text-light me-2">Halo, ${user} |</span>
+    
+            <button onclick="logout()" 
+                class="btn btn-outline-light btn-sm">
                 Logout
             </button>
         `;

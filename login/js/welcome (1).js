@@ -20,8 +20,10 @@ document.addEventListener("DOMContentLoaded", function () {
     } 
     else {
         authArea.innerHTML = `
-            <a href="login/index.html" class="btn btn-primary py-2 px-4">
-            Login
+            <a href="login/index.html" 
+                class="btn btn-primary py-2 px-4"
+                style="margin-left:20px;">
+                Login
             </a>
         `;
     }

@@ -344,9 +344,7 @@ input {
 }
 
 #alertBox {
-  position: fixed;
-  top: 20px;
-  left: 20%;
-  transform: translateX(-50%);
-  z-index: 999;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 8px;
 }

@@ -96,7 +96,7 @@ h6,
 }
 
 .navbar .navbar-nav .nav-link {
-    padding: 35px 15px;
+    padding: 35px 10px; /* [FIXED] Diubah dari 15px jadi 10px biar menu muat 1 baris */
     color: var(--light);
     outline: none;
 }
@@ -108,6 +108,18 @@ h6,
 
 .navbar.fixed-top {
     transition: .5s;
+}
+
+/* [FIXED] Menyesuaikan ukuran font brand Sweezy agar tidak makan terlalu banyak space */
+.navbar-brand h1 {
+    font-size: 2.2rem;
+    margin-right: 10px;
+}
+
+/* [FIXED] Memperkecil sedikit tombol login di navbar */
+#authArea .btn {
+    padding: 8px 15px !important;
+    font-size: 14px !important;
 }
 
 @media (max-width: 991.98px) {
@@ -211,6 +223,11 @@ h6,
     margin-bottom: 6rem;
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/carousel-1.jpg) center center no-repeat;
     background-size: cover;
+}
+
+/* [FIXED] Memperkecil sedikit font judul page header biar "Tentang Kami" muat 1 baris */
+.page-header h1 {
+    font-size: 2.5rem; 
 }
 
 .breadcrumb-item+.breadcrumb-item::before {

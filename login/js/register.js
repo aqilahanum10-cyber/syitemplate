@@ -21,7 +21,7 @@ document.getElementById("registerForm").addEventListener("submit", async functio
         document.getElementById("container").classList.remove("right-panel-active");
     }
     else {
-        document.getElementById("message").innerText = 
-        data.message || "Gagal registrasi");
+        document.getElementById("message").innerText =
+        data.message || "Gagal registrasi";
     }
 });

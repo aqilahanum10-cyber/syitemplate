@@ -13,6 +13,7 @@ document.getElementById("loginForm").addEventListener("submit", async function(e
     });
 
     const data = await res.json();
+    console.log(data);
 
     if (data.status === "success") {
         // simpan username

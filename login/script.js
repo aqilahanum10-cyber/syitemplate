@@ -1,11 +1,20 @@
-const signUpButton = document.getElementById("signUp");
-const signInButton = document.getElementById("signIn");
-const container = document.getElementById("container");
+document.addEventListener("DOMContentLoaded", function () {
 
-signUpButton.addEventListener("click", () => {
-  container.classList.add("right-panel-active");
-});
+    const signUpButton = document.getElementById("signUp");
+    const signInButton = document.getElementById("signIn");
+    const container = document.getElementById("container");
 
-signInButton.addEventListener("click", () => {
-  container.classList.remove("right-panel-active");
+    console.log("signUp:", signUpButton);
+    console.log("signIn:", signInButton);
+
+    signUpButton.addEventListener("click", function (e) {
+        e.preventDefault();
+        container.classList.add("right-panel-active");
+    });
+
+    signInButton.addEventListener("click", function (e) {
+        e.preventDefault();
+        container.classList.remove("right-panel-active");
+    });
+
 });

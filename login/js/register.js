@@ -14,6 +14,7 @@ document.getElementById("registerForm").addEventListener("submit", async functio
     });
 
     const data = await res.json();
+    console.log(data);
 
     if (data.status === "success") {
         alert("Registrasi berhasil, silakan login");

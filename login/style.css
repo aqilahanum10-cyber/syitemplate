@@ -179,7 +179,7 @@ input {
   width: 100%;
   overflow: hidden;
   transition: transform 0.6s ease-in-out;
-  z-index: 100;
+  z-index: 200; /* FIX: dinaikkan dari 100 ke 200 */
 }
 
 .container.right-panel-active .overlay-container {
@@ -235,6 +235,13 @@ input {
 
 .container.right-panel-active .overlay-right {
   transform: translateY(20%);
+}
+
+/* FIX: tombol di overlay bisa diklik */
+.overlay-panel button {
+  pointer-events: all;
+  position: relative;
+  z-index: 201;
 }
 
 @media (min-width: 768px) {
@@ -323,22 +330,23 @@ input {
     transform: translateX(20%);
   }
 }
-.alert{
-    background: #e44e4e;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    border:1px solid #b32929;
+
+.alert {
+  background: #e44e4e;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #b32929;
 }
 
-#message{
-    display: none;
+#message {
+  display: none;
 }
 
-#alertBox{
-    position: fixed;
-    top: 20px;
-    left: 20%;
-    transform: translateX(-50%);
-    z-index: 999;
+#alertBox {
+  position: fixed;
+  top: 20px;
+  left: 20%;
+  transform: translateX(-50%);
+  z-index: 999;
 }

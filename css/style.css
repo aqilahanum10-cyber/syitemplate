@@ -457,3 +457,8 @@ h6,
     margin-left: auto;
     margin-right: auto;
 }
+
+.phone-number {
+    color: white !important;
+    font-weight: bold;
+}

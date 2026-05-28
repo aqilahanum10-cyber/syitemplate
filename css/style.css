@@ -462,3 +462,9 @@ h6,
     color: white !important;
     font-weight: bold;
 }
+
+.navbar .ps-3 p,
+.bg-primary .ms-4 p,
+.bg-primary .ms-4 .fs-1 {
+    color: #FFFFFF !important;
+}

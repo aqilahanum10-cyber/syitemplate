@@ -468,3 +468,20 @@ h6,
 .bg-primary .ms-4 .fs-1 {
     color: #FFFFFF !important;
 }
+
+.text-primary {
+    color: white !important;
+}
+
+.bg-primary {
+    background-color: #8B5E3C !important;
+}
+
+.btn-primary {
+    background-color: #8B5E3C !important;
+    border-color: #8B5E3C !important;
+}
+
+.border-primary {
+    border-color: #8B5E3C !important;
+}
